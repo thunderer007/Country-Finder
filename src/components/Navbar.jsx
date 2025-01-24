@@ -5,11 +5,6 @@ const Navbar = () => {
   const { toggleTheme, isDarkTheme } = globalThemeContext();
 
   return (
-    /**
-     * style={
-        isDarkTheme ? { backgroundColor: " red" } : { backgroundColor: "green" }
-      }
-     */
     <nav
       className="nav"
       style={
