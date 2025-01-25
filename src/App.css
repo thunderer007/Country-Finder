@@ -76,6 +76,19 @@ img {
   width: 280px;
 }
 
+.home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 50px 0;
+  cursor: pointer;
+  border: none;
+  padding: 5px 15px;
+
+  /* background-color: red; */
+}
+
 .country img {
   width: 100%;
   height: 200px;
@@ -94,8 +107,50 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
+  align-items: center;
   margin-top: 40px;
 }
 
+.single-country-flag {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .single-country-right {
+}
+
+.country-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.single-country-details {
+  display: flex;
+  gap: 100px;
+  font-size: 14px;
+}
+
+.single-country-details p {
+  margin-bottom: 10px;
+}
+
+.single-country-details span {
+  font-weight: 700;
+}
+
+.single-details-bottom {
+  margin-top: 50px;
+}
+
+.single-details-bottom p {
+  font-weight: 700;
+}
+
+.single-details-bottom span {
+  border: 1px outset;
+  font-weight: normal;
+  margin-right: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
 }
