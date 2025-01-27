@@ -16,7 +16,7 @@ const Country = () => {
 
   const { id } = useParams();
   const { data, isLoading, isError } = useQuery({
-    queryKey: ["country"],
+    queryKey: ["country", id],
     queryFn: () => fetchCountry(id),
   });
 
@@ -50,12 +50,12 @@ const Country = () => {
 
       <div className="single-country-container">
         <img
-          src={data[0].flags.png}
-          alt={data[0].flags.alt}
+          src={data[0]?.flags?.png}
+          alt={data[0]?.flags?.alt}
           className="single-country-flag"
         />
         <div className="single-country-right">
-          <h4 className="country-name">{data[0].name.common}</h4>
+          <h4 className="country-name">{data[0]?.name?.common}</h4>
           <div className="single-country-details">
             <div className="single-country-details-left">
               <p>
